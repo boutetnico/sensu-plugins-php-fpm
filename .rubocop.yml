@@ -31,3 +31,12 @@ Style/Documentation:
 
 Style/Next:
   Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/CommentedKeyword:
+  Enabled: false
+
+Layout/HashAlignment:
+  Enabled: false
