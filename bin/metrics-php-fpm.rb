@@ -57,7 +57,7 @@ class PhpfpmMetrics < Sensu::Plugin::Metric::CLI::Graphite
 
     critical "Unable to load url #{config[:url]}" if response.nil? || response.code != '200'
 
-    stat = %w(start_since
+    stat = %w[start_since
               accepted_conn
               listen_queue
               max_listen_queue
@@ -67,7 +67,7 @@ class PhpfpmMetrics < Sensu::Plugin::Metric::CLI::Graphite
               total_processes
               max_active_processes
               max_children_reached
-              slow_requests)
+              slow_requests]
     response.body.each_line do |line|
       k, v = line.split(':').map(&:strip)
       k.tr! ' ', '_'
