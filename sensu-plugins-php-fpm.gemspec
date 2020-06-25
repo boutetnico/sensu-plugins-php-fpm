@@ -12,32 +12,32 @@ Gem::Specification.new do |s|
   s.email                  = '<sensu-users@googlegroups.com>'
   s.executables            = Dir.glob('bin/**/*.rb').map { |file| File.basename(file) }
   s.files                  = Dir.glob('{bin,lib}/**/*') + %w(LICENSE README.md CHANGELOG.md)
-  s.homepage               = 'https://github.com/sensu-plugins/sensu-plugins-php-fpm'
+  s.homepage               = 'https://github.com/boutetnico/sensu-plugins-php-fpm'
   s.license                = 'MIT'
   s.metadata               = { 'maintainer'         => '@tas50',
                                'development_status' => 'active',
                                'production_status'  => 'unstable - testing recommended',
                                'release_draft'      => 'false',
                                'release_prerelease' => 'false' }
-  s.name                   = 'sensu-plugins-php-fpm'
+  s.name                   = 'sensu-plugins-php-fpm-boutetnico'
   s.platform               = Gem::Platform::RUBY
   s.post_install_message   = 'You can use the embedded Ruby by setting EMBEDDED_RUBY=true in /etc/default/sensu'
   s.require_paths          = ['lib']
-  s.required_ruby_version  = '>= 2.0.0'
+  s.required_ruby_version  = '>= 2.4.0'
 
   s.summary                = 'Sensu plugins for php-fpm'
   s.test_files             = s.files.grep(%r{^(test|spec|features)/})
   s.version                = SensuPluginsPhpFpm::Version::VER_STRING
 
-  s.add_runtime_dependency 'sensu-plugin', '~> 1.2'
+  s.add_runtime_dependency 'sensu-plugin', '~> 4.0'
 
-  s.add_development_dependency 'bundler',                   '~> 1.7'
+  s.add_development_dependency 'bundler',                   '~> 2.1'
   s.add_development_dependency 'codeclimate-test-reporter', '~> 1.0'
   s.add_development_dependency 'github-markup',             '~> 3.0'
-  s.add_development_dependency 'pry',                       '~> 0.10'
-  s.add_development_dependency 'rake',                      '~> 10.0'
-  s.add_development_dependency 'redcarpet',                 '~> 3.2'
-  s.add_development_dependency 'rubocop',                   '~> 0.40.0'
-  s.add_development_dependency 'rspec',                     '~> 3.1'
-  s.add_development_dependency 'yard',                      '~> 0.8'
+  s.add_development_dependency 'pry',                       '~> 0.13'
+  s.add_development_dependency 'rake',                      '~> 13.0'
+  s.add_development_dependency 'redcarpet',                 '~> 3.5'
+  s.add_development_dependency 'rspec',                     '~> 3.9'
+  s.add_development_dependency 'rubocop',                   '~> 0.85.0'
+  s.add_development_dependency 'yard',                      '~> 0.9.25'
 end

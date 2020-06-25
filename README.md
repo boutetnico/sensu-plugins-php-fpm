@@ -1,12 +1,11 @@
 ## Sensu-Plugins-php-fpm
 
-[![Build Status](https://travis-ci.org/sensu-plugins/sensu-plugins-php-fpm.svg?branch=master)](https://travis-ci.org/sensu-plugins/sensu-plugins-php-fpm)
-[![Gem Version](https://badge.fury.io/rb/sensu-plugins-php-fpm.svg)](http://badge.fury.io/rb/sensu-plugins-php-fpm)
-[![Code Climate](https://codeclimate.com/github/sensu-plugins/sensu-plugins-php-fpm/badges/gpa.svg)](https://codeclimate.com/github/sensu-plugins/sensu-plugins-php-fpm)
-[![Test Coverage](https://codeclimate.com/github/sensu-plugins/sensu-plugins-php-fpm/badges/coverage.svg)](https://codeclimate.com/github/sensu-plugins/sensu-plugins-php-fpm)
-[![Dependency Status](https://gemnasium.com/sensu-plugins/sensu-plugins-php-fpm.svg)](https://gemnasium.com/sensu-plugins/sensu-plugins-php-fpm)
+[![Gem Version](https://badge.fury.io/rb/sensu-plugins-php-fpm-boutetnico.svg)](https://badge.fury.io/rb/sensu-plugins-php-fpm-boutetnico.svg)
+[![Sensu Bonsai Asset](https://img.shields.io/badge/Bonsai-Download%20Me-brightgreen.svg?colorB=89C967&logo=sensu)](https://bonsai.sensu.io/assets/boutetnico/sensu-plugins-php-fpm)
 
-## Functionality
+## This is an unofficial fork
+
+This fork is automatically tested, built and published to [RubyGems](https://rubygems.org/gems/sensu-plugins-php-fpm-boutetnico/) and [Bonsai](https://bonsai.sensu.io/assets/boutetnico/sensu-plugins-php-fpm).
 
 ## Files
  * bin/check-php-fpm.rb
